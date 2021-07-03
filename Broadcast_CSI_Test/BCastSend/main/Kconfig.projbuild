@@ -1,0 +1,8 @@
+config APP_BROADCAST_IPV4_ADDR
+    string "Broadcast IPV4 address"
+    default "192.168.4.255"
+    help
+        The packets are broadcasted over this IP address.
+        The firts 3 octets of the IP address should match the IP address of the broadcast receiver (Station).
+        E.g. If the station IP address is "192.160.9.7", then this broadcast address should be set to "192.160.9.255"
+        
